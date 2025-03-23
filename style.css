@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('img2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for opacity */
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  color: #fff; /* Set text color to white or any color that contrasts well with your background */
+}
+
+.memeGenerator {
+  width: 450px;
+  background-image: url('img1.jpg');
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 50vh;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 3px;
+  margin-bottom: -10px;
+  color:yellow;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.meme {
+  height: 200px;
+  object-fit: cover;
+}
+
+.author {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+}
+
+.generateMemeBtn {
+  font-size: 20px;
+  padding: 20px 40px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, #33ccff 0%, #00ff99 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.generateMemeBtn:active {
+  transform: scale(0.95);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
